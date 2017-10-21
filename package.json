@@ -1,6 +1,6 @@
 {
   "name": "@dataplug/swedbank-dataplug",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Swedbank dataplug (by Dataplug.io)",
   "main": "lib/index.js",
   "bin": {
