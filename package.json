@@ -1,0 +1,48 @@
+{
+  "name": "@dataplug/swedbank-dataplug",
+  "version": "0.0.0",
+  "description": "Swedbank dataplug (by Dataplug.io)",
+  "main": "lib/index.js",
+  "bin": {
+    "swedbank-dataplug": "bin/cli.js"
+  },
+  "scripts": {
+    "jsdoc": "jsdoc --destination ./docs --recurse ./lib ./bin --verbose",
+    "test": "mocha",
+    "coverage": "nyc --reporter=html --reporter=text mocha",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dataplug-io/swedbank-dataplug.git"
+  },
+  "keywords": [
+    "swedbank",
+    "data",
+    "export",
+    "import"
+  ],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dataplug-io/swedbank-dataplug/issues"
+  },
+  "homepage": "https://github.com/dataplug-io/swedbank-dataplug#readme",
+  "dependencies": {
+    "@dataplug/dataplug": "^0.6.1",
+    "@dataplug/dataplug-cli": "^0.7.1",
+    "bluebird": "^3.5.1",
+    "moment": "^2.19.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jsdoc": "^3.5.5",
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1",
+    "standard": "^10.0.3"
+  }
+}
